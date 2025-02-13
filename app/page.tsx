@@ -1,4 +1,4 @@
 const HomePage = () => {
-  return <div>Prostore</div>;
+  return <div>Master Key Fob</div>;
 };
 export default HomePage;
