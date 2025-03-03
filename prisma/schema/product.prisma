@@ -2,7 +2,7 @@ model Product {
     id          String   @id @default(dbgenerated("gen_random_uuid()")) @db.Uuid
     name        String
     slug        String   @unique(map: "product_slug_idx")
-    catgory     String
+    category    String
     images      String[]
     brand       String
     description String
@@ -13,5 +13,4 @@ model Product {
     isFeatured  Boolean  @default(false)
     banner      String?
     createdAt   DateTime @default(now()) @db.Timestamp(6)
-    updateAt    DateTime @updatedAt
 }

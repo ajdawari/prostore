@@ -3,7 +3,7 @@ CREATE TABLE "Product" (
     "id" UUID NOT NULL DEFAULT gen_random_uuid(),
     "name" TEXT NOT NULL,
     "slug" TEXT NOT NULL,
-    "catgory" TEXT NOT NULL,
+    "category" TEXT NOT NULL,
     "images" TEXT[],
     "brand" TEXT NOT NULL,
     "description" TEXT NOT NULL,
@@ -14,7 +14,6 @@ CREATE TABLE "Product" (
     "isFeatured" BOOLEAN NOT NULL DEFAULT false,
     "banner" TEXT,
     "createdAt" TIMESTAMP(6) NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    "updateAt" TIMESTAMP(3) NOT NULL,
 
     CONSTRAINT "Product_pkey" PRIMARY KEY ("id")
 );
